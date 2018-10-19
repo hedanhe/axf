@@ -1,0 +1,49 @@
+{% extends 'axf/base.html' %}
+
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mine/css/myorder.css'%}"/>
+{#    <script type="text/javascript" charset="UTF-8" src="{% static 'mine/js/myorder.js' %}"></script>#}
+
+{% endblock linkscript %}
+
+
+{% block base %}
+
+
+<div id="box">
+    <header>
+        <a href="/mine/">返回</a>
+        <h3>我的订单</h3>
+    </header>
+
+    <div id="box1">
+        <ul>
+            {% for item in order %}
+                {% ifequal True item.progress  %}
+                    <li>
+                        <span>{{ item.orderid }}</span>
+                        <span>待支付</span>
+                    </li>
+                {% endifequal %}
+                
+            {% endfor %}
+            
+            
+        </ul>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock base %}

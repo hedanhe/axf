@@ -1,0 +1,170 @@
+#head{
+    width: 100%;
+    z-index: 997;
+    height: 1.5rem;
+    background: white;
+    position: fixed;
+    border-bottom: darkgray solid 1px;
+}
+
+#wei{
+    display: none;
+    color: blue;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+}
+
+#kong{
+    display: none;
+    color: blue;
+    font-size: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+}
+
+#head>h4{
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+#meau{
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+img{
+    width: 2.6rem;
+    height: 2.6rem;
+    float: left;
+    position: relative;
+    left: 1rem;
+}
+
+.meauList{
+    width: 10rem;
+    height: 3rem;
+    border-bottom: #80044f solid 1px;
+}
+
+.pname{
+    position: relative;
+    left: 1.2rem;
+}
+
+.ischose{
+    position: relative;
+    float: left;
+}
+
+.pprice{
+    position: relative;
+    left: 1.2rem;
+}
+
+.subShopping{
+    position: relative;
+    left: 5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.pnum{
+    position: relative;
+    left: 5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.addShopping{
+    position: relative;
+    left: 5rem;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.ischose{
+    position: relative;
+    height: 0.6rem;
+    width: 0.6rem;
+    top: 1.1rem;
+    left: 0.3rem;
+    background-color: firebrick;
+    border: black solid 1px;
+    border-radius:50%;
+}
+
+.gou{
+    position: relative;
+    left: 0.1rem;
+    line-height: 0.6rem;
+    color: white;
+    font-weight:bold;
+    font-size: 0.5rem;
+}
+
+#pay{
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    top: -3rem;
+    background-color: white;
+}
+
+#pay1{
+    width: 0.6rem;
+    height: 0.6rem;
+    float: left;
+    position: relative;
+    left: 0.3rem;
+    top: 0.1rem;
+    border: black solid 1px;
+    border-radius:50%;
+    font-weight:bold;
+    background-color: firebrick;
+}
+
+#pay11{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0.1rem;
+    line-height: 0.6rem;
+    border-radius:50%;
+    font-size: 0.5rem;
+    color: white;
+
+}
+
+#pay2{
+    width: 2rem;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: coral;
+}
+
+#pay3{
+    width: 2rem;
+    height: 1rem;
+    float: left;
+    line-height: 1rem;
+    text-align: center;
+}
+
+#pay4{
+    width: 2rem;
+    height: 1rem;
+    float: right;
+    background-color: lightpink;
+    line-height: 1rem;
+    text-align: center;
+    color: black;
+    font-weight:bold;
+}

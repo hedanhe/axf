@@ -1,0 +1,50 @@
+{% extends 'axf/base.html' %}
+
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mine/css/online.css'%}"/>
+    <script type="text/javascript" charset="UTF-8" src="{% static 'mine/js/online.js' %}"></script>
+
+{% endblock linkscript %}
+
+
+
+{% block base %}
+
+
+    <div id="box">
+        <div id="box1">
+            <img src="{% static 'mdeia/'%}{{ userAccount }}.png">
+            <div>{{ username }}</div>
+        </div>
+
+        <div id="box2">
+            <a id="box2_1"><span>我的订单</span></a>
+            <a id="box2_2"><span>查看全部订单>></span></a>
+        </div>
+        <div id="box3">
+            <a><div>待付款</div></a>
+            <a><div>代收货</div></a>
+            <a><div>待评价</div></a>
+            <a><div>退款/售后</div></a>
+        </div>
+
+        <div id="exit">
+            <a href="/quit/"><span>退出登录</span></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock base %}

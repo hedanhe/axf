@@ -1,0 +1,28 @@
+.mine_tb{
+    width: 10rem;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+
+#no-img{
+    position: absolute;
+    left: 4rem;
+    top: 3rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.td1{
+    position: absolute;
+    left: 3.5rem;
+    top: 5.5rem;
+    font-size: 0.6rem;
+}
+
+#reg{
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    font-size: 0.6rem;
+}

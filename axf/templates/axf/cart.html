@@ -1,0 +1,60 @@
+{% extends 'axf/base.html' %}
+
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cart/css/cart.css'%}"/>
+    <script type="text/javascript" charset="UTF-8" src="{% static 'cart/js/cart.js' %}"></script>
+
+{% endblock linkscript %}
+
+
+{% block base %}
+    <div id="head">
+        <h4>购物车</h4>
+    </div>
+
+    <div id="wei"><p>您还尚未登录,请点此<a href="/login/" style="color: red; text-decoration: underline;">登录</a></p></div>
+    <div id="kong"><p>亲，购物车还空空的</p></div>
+
+    <div id="meau">
+        <ul>
+            {% for item in cartlist %}
+                <li class="meauList" id="{{ item.productid }}li">
+                    <div class="confirm">
+                        <span class="ischose" goodsid="{{ item.productid }}">
+                            <span id="{{ item.productid }}a" class="gou">
+                                {% ifequal True item.isChose %}
+                                    √
+                                {% endifequal %}
+                            </span>
+                        </span>
+                    </div>
+
+                    <a href="#">
+                        <img src="{{ item.productimg }}">
+                        <p class="pname">{{ item.productname }}</p>
+                        <span class="pprice" id="{{ item.productid }}b">￥{{ item.productprice }}</span>
+                    </a>
+
+                    <section>
+                        <button class="subShopping" ga="{{ item.productid }}">-</button>
+                        <span class="pnum" id="{{ item.productid }}">{{ item.productnum }}</span>
+                        <button class="addShopping" ga="{{ item.productid }}">+</button>
+                    </section>
+
+                </li>
+            {% endfor %}
+
+        </ul>
+    </div>
+
+    <div id="pay">
+        <div id="pay1"><span id="pay11">√</span></div>
+        <div id="pay2">全选</div>
+        <div id="pay3">共￥{{ eff_price }}</div>
+        <div id="pay4">选好了</div>
+    </div>
+
+{% endblock base %}

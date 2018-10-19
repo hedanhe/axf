@@ -1,0 +1,86 @@
+
+
+#home{
+    padding: 1.5rem 0;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTI, Arial, sans-serif;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3rem;
+    position: fixed;
+}
+
+#topSwiper{
+    height: 3.9rem;
+    width: 10rem;
+    overflow: hidden;
+}
+
+#topSwiper div a{
+    display: inline-block;
+    height: 3.95rem;
+    width: 10rem;
+}
+
+#topSwiper img{
+    height: 3.9rem;
+    width: 10rem;
+}
+
+
+.topMeau{
+    padding-bottom: 0.26rem;
+}
+
+.topMeau nav{
+    background: white;
+}
+
+.topMeau nav ul{
+    display: flex;
+}
+
+.topMeau nav li{
+    width: 2.5rem;
+    font-size: 0.35rem;
+    text-align: center;
+}
+
+.topMeau nav img{
+    width: 1.8rem;
+    text-align: center;
+}
+
+.topMeau nav span{
+    width: 2.5rem;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+
+#swiperMenu{
+    height: 3rem;
+    width: 10rem;
+    overflow: hidden;
+    position: absolute;
+    top: 7.2rem;
+
+}
+
+#swiperMenu ul li a{
+    display: inline-block;
+    height: 3rem;
+    width: 3.3333rem;
+}
+
+#swiperMenu img{
+    height: 3rem;
+    width: 3.3333rem;
+    position: absolute;
+    left: -4.333rem;
+}
+
+
+
+

@@ -1,0 +1,69 @@
+{% extends 'axf/base.html' %}
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css'%}"/>
+    <script type="text/javascript" charset="UTF-8" src="{% static 'home/js/home.js' %}"></script>
+
+{% endblock linkscript %}
+
+
+{% block base %}
+
+
+    <div id="home">
+        <section class="swiper-container" id="topSwiper">
+            <div class="swiper-wrapper">
+                {% for item in wheelList %}
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="{{ item.img }}">
+                        </a>
+
+                    </div>
+                {% endfor %}
+            </div>
+
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+        </section>
+
+
+        <section class="topMeau">
+            <nav>
+                <ul>
+                    {% for item1 in navList %}
+                        <li>
+                            <a href="#">
+                                <img src="{{ item1.img }}"/>
+                                <span>{{ item1.name }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+
+                </ul>
+
+            </nav>
+
+            <menu class="swiper-container" id="swiperMenu">
+                <ul class="swiper-wrapper">
+                    {% for item2 in mustList %}
+                        <li class="swiper-slide">
+                            <a>
+                                <img src="{{ item2.img }}"/>
+                            </a>
+                        </li>
+                    {% endfor %}
+
+
+
+                </ul>
+            </menu>
+
+        </section>
+
+    </div>
+
+
+
+{% endblock base %}

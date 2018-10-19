@@ -1,0 +1,83 @@
+#box{
+    width: 100%;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    z-index: 990;
+    background: #f0f0f0;
+}
+
+#box1{
+    position: relative;
+    height: 4.5rem;
+    width: 100%;
+}
+
+#box1 img{
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    top: 1rem;
+    left: 3.8rem;
+}
+
+#box1 div{
+    width: 10rem;
+    height: 0.6rem;
+    position: relative;
+    top: 1.2rem;
+    left: 0;
+    font-size: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    color: indigo;
+}
+
+
+#box2{
+    height: 1.5rem;
+    width: 100%;
+    position: relative;
+    background: white;
+}
+
+#box2_1{
+    float: left;
+    line-height: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+#box2_2{
+    float: right;
+    line-height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+#box3{
+    height: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+#box3 div{
+    display: inline-block;
+    width: 2.4rem;
+    height: 1.5rem;
+    background: beige;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#exit{
+    height: 1.5rem;
+    width: 100%;
+    background: bisque;
+    position: relative;
+    top: 4rem;
+}
+
+#exit span{
+    text-align: center;
+    line-height: 1.5rem;
+    position: relative;
+    left: 4rem;
+}

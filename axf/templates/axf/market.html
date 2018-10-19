@@ -1,0 +1,69 @@
+{% extends 'axf/base.html' %}
+
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'market/css/market.css'%}"/>
+    <script type="text/javascript" charset="UTF-8" src="{% static 'market/js/market.js' %}"></script>
+
+{% endblock linkscript %}
+
+
+{% block base %}
+
+    <div id="market">
+        <aside>
+            <menu>
+                <section id="leftlist">
+                    <ul>
+                        {% for foo in foodtypelist %}
+                            <li>
+                                <span class="yellowSlide" id="{{ foo.typeid }}"></span>
+                                <a href="/market/{{ foo.typeid }}">{{ foo.typename }}</a>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                </section>
+            </menu>
+        </aside>
+
+
+    <section>
+            <section id="rightlist">
+                <ul>
+                    {% for foo1 in goodslist %}
+                        <div id="rightlista">
+                            <li>
+                                <a href="#">
+                                    <img src="{{ foo1.productimg }}"/>
+                                </a>
+
+                                <article class="shoppinginfo">
+                                    <h6>{{ foo1.productname }}</h6>
+                                    <p class="detailTag"><span>精选</span></p>
+                                    <span>{{ foo1.specifics }}</span>
+                                    <p class="price"><span>¥{{ foo1.price }}</span><s><span>¥{{ foo1.marketprice }}</span></s></p>
+
+                                    <section id="oo">
+                                        <button ga="{{ foo1.productid }}" class="subShopping">-</button>
+
+                                        <span id="{{ foo1.productid }}">{{ foo1.num|default:0 }}</span>
+
+                                        <button ga="{{ foo1.productid }}" class="addShopping">+</button>
+                                    </section>
+                                </article>
+
+                            </li>
+                        </div>
+                    {% endfor %}
+
+                </ul>
+            </section>
+
+    </section>
+
+
+    </div>
+{% endblock base %}

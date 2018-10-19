@@ -1,0 +1,33 @@
+{% extends 'axf/base.html' %}
+
+
+{% load static from staticfiles%}
+{% block linkscript %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mine/css/mine.css'%}"/>
+    <script type="text/javascript" charset="UTF-8" src="{% static 'mine/js/mine.js' %}"></script>
+
+{% endblock linkscript %}
+
+
+
+{% block base %}
+
+    <table class="mine_tb">
+        <tr class="no-img">
+            <img id="no-img" src="{% static 'mine/img/no-img.jpg' %}">
+        </tr>
+        <tr class="td1">
+            <td><a href="/login/">点击登录</a></td>
+        </tr>
+
+        <a id="reg" href="/register/"><p>注册</p></a>
+
+
+
+    </table>
+
+
+
+
+{% endblock base %}

@@ -1,0 +1,45 @@
+#fanhui{
+    z-index: 999;
+    position: absolute;
+    background: #f0f0f0;
+    width: 100%;
+    height: 1.5rem;
+}
+
+#fanhui a{
+    position: absolute;
+    font-size: 0.5rem;
+    right: 0.2rem;
+    top: 0.2rem;
+
+}
+
+.containter{
+    padding-top: 3rem;
+}
+
+.input-group{
+    position: relative;
+    padding: 20px;
+    width: 250px;
+}
+
+.input-group input{
+    width: 200px;
+    display: inline-block;
+}
+
+.errorlist{
+    display: inline-block;
+    position: absolute;
+    font-size: 0.3rem;
+    border: 1px solid red;
+    background-color: coral;
+    color: white;
+    top: 5.5rem;
+}
+
+.form-control{
+    padding: 0.2rem 0;
+    margin: 0.2rem 0;
+}
